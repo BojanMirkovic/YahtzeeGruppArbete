@@ -73,22 +73,22 @@
             this.chanceResultLabel = new System.Windows.Forms.Label();
             this.yahtzeResultLabel = new System.Windows.Forms.Label();
             this.totalScoreResultLabel = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
+            this.player2SmallStraightResult = new System.Windows.Forms.Label();
+            this.player2FullHauseResult = new System.Windows.Forms.Label();
+            this.player2FourOfKindResult = new System.Windows.Forms.Label();
+            this.player2ThreeOFKindResult = new System.Windows.Forms.Label();
+            this.player2BonusResult = new System.Windows.Forms.Label();
+            this.player2SumResult = new System.Windows.Forms.Label();
+            this.player2SixesResult = new System.Windows.Forms.Label();
+            this.player2FivesResult = new System.Windows.Forms.Label();
+            this.player2FoursResult = new System.Windows.Forms.Label();
+            this.player2ThreesResult = new System.Windows.Forms.Label();
+            this.player2TwosResult = new System.Windows.Forms.Label();
+            this.player2OnesResult = new System.Windows.Forms.Label();
+            this.player2TotalScoreResult = new System.Windows.Forms.Label();
+            this.player2YahtzeResult = new System.Windows.Forms.Label();
+            this.player2ChanceResult = new System.Windows.Forms.Label();
+            this.player2LargeStraightResult = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dice1PictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dice2PictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dice3PictureBox)).BeginInit();
@@ -226,7 +226,7 @@
             // player1Label
             // 
             this.player1Label.AutoSize = true;
-            this.player1Label.BackColor = System.Drawing.Color.Gold;
+            this.player1Label.BackColor = System.Drawing.Color.Ivory;
             this.player1Label.Font = new System.Drawing.Font("Stencil", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.player1Label.Location = new System.Drawing.Point(132, 23);
             this.player1Label.Name = "player1Label";
@@ -601,168 +601,168 @@
             this.totalScoreResultLabel.TabIndex = 44;
             this.totalScoreResultLabel.Text = "000";
             // 
-            // label1
+            // player2SmallStraightResult
             // 
-            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label1.Font = new System.Drawing.Font("Stencil", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(322, 539);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(65, 35);
-            this.label1.TabIndex = 56;
+            this.player2SmallStraightResult.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.player2SmallStraightResult.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.player2SmallStraightResult.Font = new System.Drawing.Font("Stencil", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.player2SmallStraightResult.Location = new System.Drawing.Point(322, 539);
+            this.player2SmallStraightResult.Name = "player2SmallStraightResult";
+            this.player2SmallStraightResult.Size = new System.Drawing.Size(65, 35);
+            this.player2SmallStraightResult.TabIndex = 56;
             // 
-            // label2
+            // player2FullHauseResult
             // 
-            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.label2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label2.Font = new System.Drawing.Font("Stencil", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(322, 482);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(65, 35);
-            this.label2.TabIndex = 55;
+            this.player2FullHauseResult.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.player2FullHauseResult.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.player2FullHauseResult.Font = new System.Drawing.Font("Stencil", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.player2FullHauseResult.Location = new System.Drawing.Point(322, 482);
+            this.player2FullHauseResult.Name = "player2FullHauseResult";
+            this.player2FullHauseResult.Size = new System.Drawing.Size(65, 35);
+            this.player2FullHauseResult.TabIndex = 55;
             // 
-            // label3
+            // player2FourOfKindResult
             // 
-            this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.label3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label3.Font = new System.Drawing.Font("Stencil", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(322, 435);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(65, 35);
-            this.label3.TabIndex = 54;
+            this.player2FourOfKindResult.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.player2FourOfKindResult.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.player2FourOfKindResult.Font = new System.Drawing.Font("Stencil", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.player2FourOfKindResult.Location = new System.Drawing.Point(322, 435);
+            this.player2FourOfKindResult.Name = "player2FourOfKindResult";
+            this.player2FourOfKindResult.Size = new System.Drawing.Size(65, 35);
+            this.player2FourOfKindResult.TabIndex = 54;
             // 
-            // label4
+            // player2ThreeOFKindResult
             // 
-            this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.label4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label4.Font = new System.Drawing.Font("Stencil", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(322, 394);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(65, 35);
-            this.label4.TabIndex = 53;
+            this.player2ThreeOFKindResult.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.player2ThreeOFKindResult.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.player2ThreeOFKindResult.Font = new System.Drawing.Font("Stencil", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.player2ThreeOFKindResult.Location = new System.Drawing.Point(322, 394);
+            this.player2ThreeOFKindResult.Name = "player2ThreeOFKindResult";
+            this.player2ThreeOFKindResult.Size = new System.Drawing.Size(65, 35);
+            this.player2ThreeOFKindResult.TabIndex = 53;
             // 
-            // label5
+            // player2BonusResult
             // 
-            this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.label5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label5.Font = new System.Drawing.Font("Stencil", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label5.Location = new System.Drawing.Point(322, 353);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(65, 35);
-            this.label5.TabIndex = 52;
-            this.label5.Text = "000";
+            this.player2BonusResult.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.player2BonusResult.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.player2BonusResult.Font = new System.Drawing.Font("Stencil", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.player2BonusResult.Location = new System.Drawing.Point(322, 353);
+            this.player2BonusResult.Name = "player2BonusResult";
+            this.player2BonusResult.Size = new System.Drawing.Size(65, 35);
+            this.player2BonusResult.TabIndex = 52;
+            this.player2BonusResult.Text = "000";
             // 
-            // label6
+            // player2SumResult
             // 
-            this.label6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.label6.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label6.Font = new System.Drawing.Font("Stencil", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label6.Location = new System.Drawing.Point(322, 312);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(65, 35);
-            this.label6.TabIndex = 51;
-            this.label6.Text = "000";
+            this.player2SumResult.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.player2SumResult.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.player2SumResult.Font = new System.Drawing.Font("Stencil", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.player2SumResult.Location = new System.Drawing.Point(322, 312);
+            this.player2SumResult.Name = "player2SumResult";
+            this.player2SumResult.Size = new System.Drawing.Size(65, 35);
+            this.player2SumResult.TabIndex = 51;
+            this.player2SumResult.Text = "000";
             // 
-            // label7
+            // player2SixesResult
             // 
-            this.label7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.label7.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label7.Font = new System.Drawing.Font("Stencil", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label7.Location = new System.Drawing.Point(322, 271);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(65, 35);
-            this.label7.TabIndex = 50;
+            this.player2SixesResult.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.player2SixesResult.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.player2SixesResult.Font = new System.Drawing.Font("Stencil", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.player2SixesResult.Location = new System.Drawing.Point(322, 271);
+            this.player2SixesResult.Name = "player2SixesResult";
+            this.player2SixesResult.Size = new System.Drawing.Size(65, 35);
+            this.player2SixesResult.TabIndex = 50;
             // 
-            // label8
+            // player2FivesResult
             // 
-            this.label8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.label8.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label8.Font = new System.Drawing.Font("Stencil", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label8.Location = new System.Drawing.Point(322, 230);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(65, 35);
-            this.label8.TabIndex = 49;
+            this.player2FivesResult.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.player2FivesResult.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.player2FivesResult.Font = new System.Drawing.Font("Stencil", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.player2FivesResult.Location = new System.Drawing.Point(322, 230);
+            this.player2FivesResult.Name = "player2FivesResult";
+            this.player2FivesResult.Size = new System.Drawing.Size(65, 35);
+            this.player2FivesResult.TabIndex = 49;
             // 
-            // label9
+            // player2FoursResult
             // 
-            this.label9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.label9.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label9.Font = new System.Drawing.Font("Stencil", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label9.Location = new System.Drawing.Point(322, 189);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(65, 35);
-            this.label9.TabIndex = 48;
+            this.player2FoursResult.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.player2FoursResult.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.player2FoursResult.Font = new System.Drawing.Font("Stencil", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.player2FoursResult.Location = new System.Drawing.Point(322, 189);
+            this.player2FoursResult.Name = "player2FoursResult";
+            this.player2FoursResult.Size = new System.Drawing.Size(65, 35);
+            this.player2FoursResult.TabIndex = 48;
             // 
-            // label10
+            // player2ThreesResult
             // 
-            this.label10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.label10.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label10.Font = new System.Drawing.Font("Stencil", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label10.Location = new System.Drawing.Point(322, 148);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(65, 35);
-            this.label10.TabIndex = 47;
+            this.player2ThreesResult.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.player2ThreesResult.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.player2ThreesResult.Font = new System.Drawing.Font("Stencil", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.player2ThreesResult.Location = new System.Drawing.Point(322, 148);
+            this.player2ThreesResult.Name = "player2ThreesResult";
+            this.player2ThreesResult.Size = new System.Drawing.Size(65, 35);
+            this.player2ThreesResult.TabIndex = 47;
             // 
-            // label11
+            // player2TwosResult
             // 
-            this.label11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.label11.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label11.Font = new System.Drawing.Font("Stencil", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label11.Location = new System.Drawing.Point(322, 107);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(65, 35);
-            this.label11.TabIndex = 46;
+            this.player2TwosResult.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.player2TwosResult.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.player2TwosResult.Font = new System.Drawing.Font("Stencil", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.player2TwosResult.Location = new System.Drawing.Point(322, 107);
+            this.player2TwosResult.Name = "player2TwosResult";
+            this.player2TwosResult.Size = new System.Drawing.Size(65, 35);
+            this.player2TwosResult.TabIndex = 46;
             // 
-            // label12
+            // player2OnesResult
             // 
-            this.label12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.label12.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label12.Font = new System.Drawing.Font("Stencil", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label12.Location = new System.Drawing.Point(322, 66);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(65, 35);
-            this.label12.TabIndex = 45;
+            this.player2OnesResult.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.player2OnesResult.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.player2OnesResult.Font = new System.Drawing.Font("Stencil", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.player2OnesResult.Location = new System.Drawing.Point(322, 66);
+            this.player2OnesResult.Name = "player2OnesResult";
+            this.player2OnesResult.Size = new System.Drawing.Size(65, 35);
+            this.player2OnesResult.TabIndex = 45;
             // 
-            // label13
+            // player2TotalScoreResult
             // 
-            this.label13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.label13.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label13.Font = new System.Drawing.Font("Stencil", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label13.Location = new System.Drawing.Point(322, 733);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(65, 35);
-            this.label13.TabIndex = 60;
-            this.label13.Text = "000";
+            this.player2TotalScoreResult.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.player2TotalScoreResult.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.player2TotalScoreResult.Font = new System.Drawing.Font("Stencil", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.player2TotalScoreResult.Location = new System.Drawing.Point(322, 733);
+            this.player2TotalScoreResult.Name = "player2TotalScoreResult";
+            this.player2TotalScoreResult.Size = new System.Drawing.Size(65, 35);
+            this.player2TotalScoreResult.TabIndex = 60;
+            this.player2TotalScoreResult.Text = "000";
             // 
-            // label14
+            // player2YahtzeResult
             // 
-            this.label14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.label14.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label14.Font = new System.Drawing.Font("Stencil", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label14.Location = new System.Drawing.Point(322, 686);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(65, 35);
-            this.label14.TabIndex = 59;
+            this.player2YahtzeResult.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.player2YahtzeResult.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.player2YahtzeResult.Font = new System.Drawing.Font("Stencil", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.player2YahtzeResult.Location = new System.Drawing.Point(322, 686);
+            this.player2YahtzeResult.Name = "player2YahtzeResult";
+            this.player2YahtzeResult.Size = new System.Drawing.Size(65, 35);
+            this.player2YahtzeResult.TabIndex = 59;
             // 
-            // label15
+            // player2ChanceResult
             // 
-            this.label15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.label15.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label15.Font = new System.Drawing.Font("Stencil", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label15.Location = new System.Drawing.Point(322, 645);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(65, 35);
-            this.label15.TabIndex = 58;
+            this.player2ChanceResult.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.player2ChanceResult.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.player2ChanceResult.Font = new System.Drawing.Font("Stencil", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.player2ChanceResult.Location = new System.Drawing.Point(322, 645);
+            this.player2ChanceResult.Name = "player2ChanceResult";
+            this.player2ChanceResult.Size = new System.Drawing.Size(65, 35);
+            this.player2ChanceResult.TabIndex = 58;
             // 
-            // label16
+            // player2LargeStraightResult
             // 
-            this.label16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.label16.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label16.Font = new System.Drawing.Font("Stencil", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label16.Location = new System.Drawing.Point(322, 594);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(65, 35);
-            this.label16.TabIndex = 57;
+            this.player2LargeStraightResult.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.player2LargeStraightResult.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.player2LargeStraightResult.Font = new System.Drawing.Font("Stencil", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.player2LargeStraightResult.Location = new System.Drawing.Point(322, 594);
+            this.player2LargeStraightResult.Name = "player2LargeStraightResult";
+            this.player2LargeStraightResult.Size = new System.Drawing.Size(65, 35);
+            this.player2LargeStraightResult.TabIndex = 57;
             // 
             // Form1
             // 
@@ -770,22 +770,22 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.ForestGreen;
             this.ClientSize = new System.Drawing.Size(845, 825);
-            this.Controls.Add(this.label13);
-            this.Controls.Add(this.label14);
-            this.Controls.Add(this.label15);
-            this.Controls.Add(this.label16);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.label10);
-            this.Controls.Add(this.label11);
-            this.Controls.Add(this.label12);
+            this.Controls.Add(this.player2TotalScoreResult);
+            this.Controls.Add(this.player2YahtzeResult);
+            this.Controls.Add(this.player2ChanceResult);
+            this.Controls.Add(this.player2LargeStraightResult);
+            this.Controls.Add(this.player2SmallStraightResult);
+            this.Controls.Add(this.player2FullHauseResult);
+            this.Controls.Add(this.player2FourOfKindResult);
+            this.Controls.Add(this.player2ThreeOFKindResult);
+            this.Controls.Add(this.player2BonusResult);
+            this.Controls.Add(this.player2SumResult);
+            this.Controls.Add(this.player2SixesResult);
+            this.Controls.Add(this.player2FivesResult);
+            this.Controls.Add(this.player2FoursResult);
+            this.Controls.Add(this.player2ThreesResult);
+            this.Controls.Add(this.player2TwosResult);
+            this.Controls.Add(this.player2OnesResult);
             this.Controls.Add(this.totalScoreResultLabel);
             this.Controls.Add(this.yahtzeResultLabel);
             this.Controls.Add(this.chanceResultLabel);
@@ -890,21 +890,21 @@
         private Label chanceResultLabel;
         private Label yahtzeResultLabel;
         private Label totalScoreResultLabel;
-        private Label label1;
-        private Label label2;
-        private Label label3;
-        private Label label4;
-        private Label label5;
-        private Label label6;
-        private Label label7;
-        private Label label8;
-        private Label label9;
-        private Label label10;
-        private Label label11;
-        private Label label12;
-        private Label label13;
-        private Label label14;
-        private Label label15;
-        private Label label16;
+        private Label player2SmallStraightResult;
+        private Label player2FullHauseResult;
+        private Label player2FourOfKindResult;
+        private Label player2ThreeOFKindResult;
+        private Label player2BonusResult;
+        private Label player2SumResult;
+        private Label player2SixesResult;
+        private Label player2FivesResult;
+        private Label player2FoursResult;
+        private Label player2ThreesResult;
+        private Label player2TwosResult;
+        private Label player2OnesResult;
+        private Label player2TotalScoreResult;
+        private Label player2YahtzeResult;
+        private Label player2ChanceResult;
+        private Label player2LargeStraightResult;
     }
 }

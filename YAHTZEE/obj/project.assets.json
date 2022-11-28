@@ -15,11 +15,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\bojan\\source\\repos\\YAHTZEEApp\\YAHTZEE\\YAHTZEE.csproj",
+      "projectUniqueName": "C:\\Users\\bojan\\Source\\Repos\\YahtzeeGruppArbete\\YAHTZEE\\YAHTZEE.csproj",
       "projectName": "YAHTZEE",
-      "projectPath": "C:\\Users\\bojan\\source\\repos\\YAHTZEEApp\\YAHTZEE\\YAHTZEE.csproj",
+      "projectPath": "C:\\Users\\bojan\\Source\\Repos\\YahtzeeGruppArbete\\YAHTZEE\\YAHTZEE.csproj",
       "packagesPath": "C:\\Users\\bojan\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\bojan\\source\\repos\\YAHTZEEApp\\YAHTZEE\\obj\\",
+      "outputPath": "C:\\Users\\bojan\\Source\\Repos\\YahtzeeGruppArbete\\YAHTZEE\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

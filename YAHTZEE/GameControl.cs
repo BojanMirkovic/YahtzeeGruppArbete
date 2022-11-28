@@ -13,20 +13,24 @@ namespace YAHTZEE
        public static bool thirdRoll=false;
 
        public static bool holdButtonIsPressed=false;
+       public static bool player1Roll=false;
+       public static bool player2Roll=false;
 
-        public static List<int> diceValueList = new List<int>();
+       public static List<int> diceValueList = new List<int>();
 
 
 
 
 
-        public static void DiceRollReset(Dice dice1, Dice dice2, Dice dice3, Dice dice4,Dice dice5, Dice dice6,
+        public static void DiceRollReset(Label player1,Label player2,Dice dice1, Dice dice2, Dice dice3, Dice dice4,Dice dice5, Dice dice6,
                              Button rollButton,Button hold1,Button hold2,Button hold3,Button hold4,Button hold5)
         {
             GameControl.thirdRoll = false;
             rollButton.BackColor = Color.Gold;
             GameControl.buttonRollCounter = 0;
             GameControl.holdButtonIsPressed = false;
+            player1.BackColor = Color.Gold;
+            player2.BackColor = Color.Ivory;
 
             dice1.diceHold = false;
             dice2.diceHold = false;
@@ -44,7 +48,7 @@ namespace YAHTZEE
 
             diceValueList.Clear();
             
-
+           
             ////////////////////////////////////////////////////////////
 
            
@@ -91,7 +95,7 @@ namespace YAHTZEE
         public static int OnesToSixesCalculationResult(int diceValue)
         {
             int diceValueTotal = 0;
-            //List<int> brojevi = new List<int> { 1, 3, 5, 1, 1, 1, 1 };
+            
             foreach (var number in diceValueList)
             {
                 if (number == diceValue)

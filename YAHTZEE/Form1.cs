@@ -9,9 +9,7 @@ namespace YAHTZEE
         Dice dice5=new Dice();
         Dice dice6=new Dice();
 
-       
-
-       
+        private bool firstPlayerTurn = true;
         public Form1()
         {
             InitializeComponent();
@@ -174,8 +172,14 @@ namespace YAHTZEE
                 default:
                     break;
             }
+
+            
+
+            
+
+           
         }
-        private void holdDice1Button_Click(object sender, EventArgs e)//RADI
+        private void holdDice1Button_Click(object sender, EventArgs e)
         {
             GameControl.HoldDice(dice1, holdDice1Button);
         }
@@ -204,82 +208,306 @@ namespace YAHTZEE
 
         private void onesCalculationButton_Click(object sender, EventArgs e)
         {
-            GameControl.AddDiceToList(GameControl.diceValueList, dice1, dice2, dice3, dice4, dice5);
 
-            onesResultLabel.Text = GameControl.OnesToSixesCalculationResult(1).ToString();
+            if (firstPlayerTurn)
+            {
+                
+                GameControl.AddDiceToList(GameControl.diceValueList, dice1, dice2, dice3, dice4, dice5);
 
-            GameControl.DiceRollReset(dice1, dice2, dice3, dice4, dice5, dice6, rollDicebutton, holdDice1Button,
-                      holdDice2Button, holdDice3Button, holdDice4Button, holdDice5Button);
+                if (onesResultLabel.Text=="")
+                {
+                    onesResultLabel.Text = GameControl.OnesToSixesCalculationResult(1).ToString();
+                }
 
-            onesCalculationButton.Enabled = false;
-            onesCalculationButton.BackColor = Color.Red;
+                GameControl.DiceRollReset(player1Label,player2Label,dice1, dice2, dice3, dice4, dice5, dice6, rollDicebutton, holdDice1Button,
+                          holdDice2Button, holdDice3Button, holdDice4Button, holdDice5Button);
 
+                if (player2OnesResult.Text !="")
+                {
+                    onesCalculationButton.Enabled = false;
+                    onesCalculationButton.BackColor = Color.Red;
+                }
+                // player1Label.BackColor = Color.Ivory;
+                //player1Label.BackColor = Color.Gold;
+            }
+            else
+            {
+               
+                GameControl.AddDiceToList(GameControl.diceValueList, dice1, dice2, dice3, dice4, dice5);
 
+                if (player2OnesResult.Text=="")
+                {
+                    player2OnesResult.Text = GameControl.OnesToSixesCalculationResult(1).ToString();
+                }
+
+                GameControl.DiceRollReset(player1Label, player2Label, dice1, dice2, dice3, dice4, dice5, dice6, rollDicebutton, holdDice1Button,
+                          holdDice2Button, holdDice3Button, holdDice4Button, holdDice5Button);
+
+                if (onesResultLabel.Text!="")
+                {
+                    onesCalculationButton.Enabled = false;
+                    onesCalculationButton.BackColor = Color.Red;
+                }
+                player1Label.BackColor = Color.Ivory;
+                player2Label.BackColor = Color.Gold;
+
+                firstPlayerTurn = false; 
+            }
+
+            firstPlayerTurn = !firstPlayerTurn;
+            
         }
         private void twosCalculationButton_Click(object sender, EventArgs e)
         {
-            GameControl.AddDiceToList(GameControl.diceValueList, dice1, dice2, dice3, dice4, dice5);
+            if (firstPlayerTurn)
+            {
 
-            twosResultLabel.Text = GameControl.OnesToSixesCalculationResult(2).ToString();
+                GameControl.AddDiceToList(GameControl.diceValueList, dice1, dice2, dice3, dice4, dice5);
 
-            GameControl.DiceRollReset(dice1, dice2, dice3, dice4, dice5, dice6, rollDicebutton, holdDice1Button,
-                      holdDice2Button, holdDice3Button, holdDice4Button, holdDice5Button);
+                if (twosResultLabel.Text == "")
+                {
+                    twosResultLabel.Text = GameControl.OnesToSixesCalculationResult(2).ToString();
+                }
 
-            twosCalculationButton.Enabled = false;
-            twosCalculationButton.BackColor = Color.Red;
+                GameControl.DiceRollReset(player1Label, player2Label, dice1, dice2, dice3, dice4, dice5, dice6, rollDicebutton, holdDice1Button,
+                          holdDice2Button, holdDice3Button, holdDice4Button, holdDice5Button);
+
+                if (player2TwosResult.Text != "")
+                {
+                    twosCalculationButton.Enabled = false;
+                    twosCalculationButton.BackColor = Color.Red;
+                }
+                // player1Label.BackColor = Color.Ivory;
+                //player1Label.BackColor = Color.Gold;
+            }
+            else
+            {
+
+                GameControl.AddDiceToList(GameControl.diceValueList, dice1, dice2, dice3, dice4, dice5);
+
+                if (player2TwosResult.Text == "")
+                {
+                    player2TwosResult.Text = GameControl.OnesToSixesCalculationResult(2).ToString();
+                }
+
+                GameControl.DiceRollReset(player1Label, player2Label, dice1, dice2, dice3, dice4, dice5, dice6, rollDicebutton, holdDice1Button,
+                          holdDice2Button, holdDice3Button, holdDice4Button, holdDice5Button);
+
+                if (twosResultLabel.Text != "")
+                {
+                    twosCalculationButton.Enabled = false;
+                    twosCalculationButton.BackColor = Color.Red;
+                }
+                player1Label.BackColor = Color.Ivory;
+                player2Label.BackColor = Color.Gold;
+
+                firstPlayerTurn = false;
+            }
+
+            firstPlayerTurn = !firstPlayerTurn;
         }
 
         private void threesCalculationButton_Click(object sender, EventArgs e)
         {
-            GameControl.AddDiceToList(GameControl.diceValueList, dice1, dice2, dice3, dice4, dice5);
+            if (firstPlayerTurn)
+            {
 
-            threesResultLabel.Text = GameControl.OnesToSixesCalculationResult(3).ToString();
+                GameControl.AddDiceToList(GameControl.diceValueList, dice1, dice2, dice3, dice4, dice5);
 
-            GameControl.DiceRollReset(dice1, dice2, dice3, dice4, dice5, dice6, rollDicebutton, holdDice1Button,
-                      holdDice2Button, holdDice3Button, holdDice4Button, holdDice5Button);
+                if (threesResultLabel.Text == "")
+                {
+                    threesResultLabel.Text = GameControl.OnesToSixesCalculationResult(3).ToString();
+                }
 
-            threesCalculationButton.Enabled = false;
-            threesCalculationButton.BackColor = Color.Red;
+                GameControl.DiceRollReset(player1Label, player2Label, dice1, dice2, dice3, dice4, dice5, dice6, rollDicebutton, holdDice1Button,
+                          holdDice2Button, holdDice3Button, holdDice4Button, holdDice5Button);
+
+                if (player2ThreesResult.Text != "")
+                {
+                    threesCalculationButton.Enabled = false;
+                    threesCalculationButton.BackColor = Color.Red;
+                }
+                // player1Label.BackColor = Color.Ivory;
+                //player1Label.BackColor = Color.Gold;
+            }
+            else
+            {
+
+                GameControl.AddDiceToList(GameControl.diceValueList, dice1, dice2, dice3, dice4, dice5);
+
+                if (player2ThreesResult.Text == "")
+                {
+                    player2ThreesResult.Text = GameControl.OnesToSixesCalculationResult(3).ToString();
+                }
+
+                GameControl.DiceRollReset(player1Label, player2Label, dice1, dice2, dice3, dice4, dice5, dice6, rollDicebutton, holdDice1Button,
+                          holdDice2Button, holdDice3Button, holdDice4Button, holdDice5Button);
+
+                if (threesResultLabel.Text != "")
+                {
+                    threesCalculationButton.Enabled = false;
+                    threesCalculationButton.BackColor = Color.Red;
+                }
+                player1Label.BackColor = Color.Ivory;
+                player2Label.BackColor = Color.Gold;
+
+                firstPlayerTurn = false;
+            }
+
+            firstPlayerTurn = !firstPlayerTurn;
         }
 
         private void FoursCalculationButton_Click(object sender, EventArgs e)
         {
 
-            GameControl.AddDiceToList(GameControl.diceValueList, dice1, dice2, dice3, dice4, dice5);
 
-            foursResultLabel.Text = GameControl.OnesToSixesCalculationResult(4).ToString();
+            if (firstPlayerTurn)
+            {
 
-            GameControl.DiceRollReset(dice1, dice2, dice3, dice4, dice5, dice6, rollDicebutton, holdDice1Button,
-                      holdDice2Button, holdDice3Button, holdDice4Button, holdDice5Button);
+                GameControl.AddDiceToList(GameControl.diceValueList, dice1, dice2, dice3, dice4, dice5);
 
-            foursCalculationButton.Enabled = false;
-            foursCalculationButton.BackColor = Color.Red;
+                if (foursResultLabel.Text == "")
+                {
+                    foursResultLabel.Text = GameControl.OnesToSixesCalculationResult(4).ToString();
+                }
+
+                GameControl.DiceRollReset(player1Label, player2Label, dice1, dice2, dice3, dice4, dice5, dice6, rollDicebutton, holdDice1Button,
+                          holdDice2Button, holdDice3Button, holdDice4Button, holdDice5Button);
+
+                if (player2FoursResult.Text != "")
+                {
+                    foursCalculationButton.Enabled = false;
+                    foursCalculationButton.BackColor = Color.Red;
+                }
+                // player1Label.BackColor = Color.Ivory;
+                //player1Label.BackColor = Color.Gold;
+            }
+            else
+            {
+
+                GameControl.AddDiceToList(GameControl.diceValueList, dice1, dice2, dice3, dice4, dice5);
+
+                if (player2FoursResult.Text == "")
+                {
+                    player2FoursResult.Text = GameControl.OnesToSixesCalculationResult(4).ToString();
+                }
+
+                GameControl.DiceRollReset(player1Label, player2Label, dice1, dice2, dice3, dice4, dice5, dice6, rollDicebutton, holdDice1Button,
+                          holdDice2Button, holdDice3Button, holdDice4Button, holdDice5Button);
+
+                if (foursResultLabel.Text != "")
+                {
+                    foursCalculationButton.Enabled = false;
+                    foursCalculationButton.BackColor = Color.Red;
+                }
+                player1Label.BackColor = Color.Ivory;
+                player2Label.BackColor = Color.Gold;
+
+                firstPlayerTurn = false;
+            }
+
+            firstPlayerTurn = !firstPlayerTurn;
+
         }
 
         private void fivesCalculationButton_Click(object sender, EventArgs e)
         {
-            GameControl.AddDiceToList(GameControl.diceValueList, dice1, dice2, dice3, dice4, dice5);
+            if (firstPlayerTurn)
+            {
 
-            fivesResultLabel.Text = GameControl.OnesToSixesCalculationResult(5).ToString();
+                GameControl.AddDiceToList(GameControl.diceValueList, dice1, dice2, dice3, dice4, dice5);
 
-            GameControl.DiceRollReset(dice1, dice2, dice3, dice4, dice5, dice6, rollDicebutton, holdDice1Button,
-                      holdDice2Button, holdDice3Button, holdDice4Button, holdDice5Button);
+                if (fivesResultLabel.Text == "")
+                {
+                    fivesResultLabel.Text = GameControl.OnesToSixesCalculationResult(5).ToString();
+                }
 
-            fivesCalculationButton.Enabled = false;
-            fivesCalculationButton.BackColor = Color.Red;
+                GameControl.DiceRollReset(player1Label, player2Label, dice1, dice2, dice3, dice4, dice5, dice6, rollDicebutton, holdDice1Button,
+                          holdDice2Button, holdDice3Button, holdDice4Button, holdDice5Button);
+
+                if (player2FivesResult.Text != "")
+                {
+                    fivesCalculationButton.Enabled = false;
+                    fivesCalculationButton.BackColor = Color.Red;
+                }
+                // player1Label.BackColor = Color.Ivory;
+                //player1Label.BackColor = Color.Gold;
+            }
+            else
+            {
+
+                GameControl.AddDiceToList(GameControl.diceValueList, dice1, dice2, dice3, dice4, dice5);
+
+                if (player2FivesResult.Text == "")
+                {
+                    player2FivesResult.Text = GameControl.OnesToSixesCalculationResult(5).ToString();
+                }
+
+                GameControl.DiceRollReset(player1Label, player2Label, dice1, dice2, dice3, dice4, dice5, dice6, rollDicebutton, holdDice1Button,
+                          holdDice2Button, holdDice3Button, holdDice4Button, holdDice5Button);
+
+                if (fivesResultLabel.Text != "")
+                {
+                    fivesCalculationButton.Enabled = false;
+                    fivesCalculationButton.BackColor = Color.Red;
+                }
+                player1Label.BackColor = Color.Ivory;
+                player2Label.BackColor = Color.Gold;
+
+                firstPlayerTurn = false;
+            }
+
+            firstPlayerTurn = !firstPlayerTurn;
         }
 
         private void SixesCalculationButton_Click(object sender, EventArgs e)
         {
-            GameControl.AddDiceToList(GameControl.diceValueList, dice1, dice2, dice3, dice4, dice5);
+            if (firstPlayerTurn)
+            {
 
-            sixesResultLabel.Text = GameControl.OnesToSixesCalculationResult(6).ToString();
+                GameControl.AddDiceToList(GameControl.diceValueList, dice1, dice2, dice3, dice4, dice5);
 
-            GameControl.DiceRollReset(dice1, dice2, dice3, dice4, dice5, dice6, rollDicebutton, holdDice1Button,
-                      holdDice2Button, holdDice3Button, holdDice4Button, holdDice5Button);
+                if (sixesResultLabel.Text == "")
+                {
+                    sixesResultLabel.Text = GameControl.OnesToSixesCalculationResult(6).ToString();
+                }
 
-            sixesCalculationButton.Enabled = false;
-            sixesCalculationButton.BackColor = Color.Red;
+                GameControl.DiceRollReset(player1Label, player2Label, dice1, dice2, dice3, dice4, dice5, dice6, rollDicebutton, holdDice1Button,
+                          holdDice2Button, holdDice3Button, holdDice4Button, holdDice5Button);
+
+                if (player2SixesResult.Text != "")
+                {
+                    sixesCalculationButton.Enabled = false;
+                    sixesCalculationButton.BackColor = Color.Red;
+                }
+                // player1Label.BackColor = Color.Ivory;
+                //player1Label.BackColor = Color.Gold;
+            }
+            else
+            {
+
+                GameControl.AddDiceToList(GameControl.diceValueList, dice1, dice2, dice3, dice4, dice5);
+
+                if (player2SixesResult.Text == "")
+                {
+                    player2SixesResult.Text = GameControl.OnesToSixesCalculationResult(6).ToString();
+                }
+
+                GameControl.DiceRollReset(player1Label, player2Label, dice1, dice2, dice3, dice4, dice5, dice6, rollDicebutton, holdDice1Button,
+                          holdDice2Button, holdDice3Button, holdDice4Button, holdDice5Button);
+
+                if (sixesResultLabel.Text != "")
+                {
+                    sixesCalculationButton.Enabled = false;
+                    sixesCalculationButton.BackColor = Color.Red;
+                }
+                player1Label.BackColor = Color.Ivory;
+                player2Label.BackColor = Color.Gold;
+
+                firstPlayerTurn = false;
+            }
+
+            firstPlayerTurn = !firstPlayerTurn;
         }
 
         private void sumCalculationButton_Click(object sender, EventArgs e)
@@ -295,7 +523,7 @@ namespace YAHTZEE
             smallGameResult = onesResult + twosResult + threesResult + foursResult + fivesResult + sixesResult;
             sumResultLabel.Text = smallGameResult.ToString();
 
-            GameControl.DiceRollReset(dice1, dice2, dice3, dice4, dice5, dice6, rollDicebutton, holdDice1Button,
+            GameControl.DiceRollReset(player1Label, player2Label, dice1, dice2, dice3, dice4, dice5, dice6, rollDicebutton, holdDice1Button,
                      holdDice2Button, holdDice3Button, holdDice4Button, holdDice5Button);
 
             sumCalculationButton.Enabled = false;
@@ -314,7 +542,7 @@ namespace YAHTZEE
             }
             else { bonusResultLabel.Text = "000"; }
 
-            GameControl.DiceRollReset(dice1, dice2, dice3, dice4, dice5, dice6, rollDicebutton, holdDice1Button,
+            GameControl.DiceRollReset(player1Label, player2Label,dice1, dice2, dice3, dice4, dice5, dice6, rollDicebutton, holdDice1Button,
                      holdDice2Button, holdDice3Button, holdDice4Button, holdDice5Button);
 
             bonusCalculationButton.Enabled = false;
@@ -327,7 +555,7 @@ namespace YAHTZEE
 
             threeOfKindResultLabel.Text = GameControl.ThreesCalculationResult().ToString();
 
-            GameControl.DiceRollReset(dice1, dice2, dice3, dice4, dice5, dice6, rollDicebutton, holdDice1Button,
+            GameControl.DiceRollReset(player1Label, player2Label,dice1, dice2, dice3, dice4, dice5, dice6, rollDicebutton, holdDice1Button,
                       holdDice2Button, holdDice3Button, holdDice4Button, holdDice5Button);
 
             threeOfKindCalculationButton.Enabled = false;
@@ -340,7 +568,7 @@ namespace YAHTZEE
 
             fourOfKindResultLabel.Text = GameControl.FourOfKindCalculationResult().ToString();
 
-            GameControl.DiceRollReset(dice1, dice2, dice3, dice4, dice5, dice6, rollDicebutton, holdDice1Button,
+            GameControl.DiceRollReset(player1Label, player2Label,dice1, dice2, dice3, dice4, dice5, dice6, rollDicebutton, holdDice1Button,
                       holdDice2Button, holdDice3Button, holdDice4Button, holdDice5Button);
 
             fourOfKindCalculationButton.Enabled = false;
@@ -353,7 +581,7 @@ namespace YAHTZEE
 
             fullHouseResultLabel.Text = GameControl.FullHouseCalculationResult().ToString();
 
-            GameControl.DiceRollReset(dice1, dice2, dice3, dice4, dice5, dice6, rollDicebutton, holdDice1Button,
+            GameControl.DiceRollReset(player1Label, player2Label,dice1, dice2, dice3, dice4, dice5, dice6, rollDicebutton, holdDice1Button,
                       holdDice2Button, holdDice3Button, holdDice4Button, holdDice5Button);
 
             fullHouseCalculationButton.Enabled = false;
@@ -366,7 +594,7 @@ namespace YAHTZEE
 
             largeStraightResultLabel.Text = GameControl.LargeStraightCalculationResult().ToString();
 
-            GameControl.DiceRollReset(dice1, dice2, dice3, dice4, dice5, dice6, rollDicebutton, holdDice1Button,
+            GameControl.DiceRollReset(player1Label, player2Label,dice1, dice2, dice3, dice4, dice5, dice6, rollDicebutton, holdDice1Button,
                       holdDice2Button, holdDice3Button, holdDice4Button, holdDice5Button);
 
             largeStraightCalculationButton.Enabled = false;
@@ -379,7 +607,7 @@ namespace YAHTZEE
 
             smallStraightResultLabel.Text = GameControl.SmallStraightCalculationResult().ToString();
 
-            GameControl.DiceRollReset(dice1, dice2, dice3, dice4, dice5, dice6, rollDicebutton, holdDice1Button,
+            GameControl.DiceRollReset(player1Label, player2Label,dice1, dice2, dice3, dice4, dice5, dice6, rollDicebutton, holdDice1Button,
                       holdDice2Button, holdDice3Button, holdDice4Button, holdDice5Button);
 
             smallStraightCalculationButton.Enabled = false;
@@ -392,7 +620,7 @@ namespace YAHTZEE
 
             chanceResultLabel.Text = GameControl.ChanceCalculationResult().ToString();
 
-            GameControl.DiceRollReset(dice1, dice2, dice3, dice4, dice5, dice6, rollDicebutton, holdDice1Button,
+            GameControl.DiceRollReset(player1Label, player2Label,dice1, dice2, dice3, dice4, dice5, dice6, rollDicebutton, holdDice1Button,
                       holdDice2Button, holdDice3Button, holdDice4Button, holdDice5Button);
 
             chanceCalculationButton.Enabled = false;
@@ -405,7 +633,7 @@ namespace YAHTZEE
 
             yahtzeResultLabel.Text = GameControl.YahtzeeCalculationResult().ToString();
 
-            GameControl.DiceRollReset(dice1, dice2, dice3, dice4, dice5, dice6, rollDicebutton, holdDice1Button,
+            GameControl.DiceRollReset(player1Label, player2Label,dice1, dice2, dice3, dice4, dice5, dice6, rollDicebutton, holdDice1Button,
                       holdDice2Button, holdDice3Button, holdDice4Button, holdDice5Button);
 
             yahtzeCalculationButton.Enabled = false;
@@ -431,12 +659,14 @@ namespace YAHTZEE
             totalScoreResultLabel.Text = totalScoreResult.ToString();
 
 
-            GameControl.DiceRollReset(dice1, dice2, dice3, dice4, dice5, dice6, rollDicebutton, holdDice1Button,
+            GameControl.DiceRollReset(player1Label, player2Label,dice1, dice2, dice3, dice4, dice5, dice6, rollDicebutton, holdDice1Button,
                      holdDice2Button, holdDice3Button, holdDice4Button, holdDice5Button);
 
             totalScoreCalculationButton.Enabled = false;
             totalScoreCalculationButton.BackColor = Color.Red;
         }
+
+        
     }
 }
 
