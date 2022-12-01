@@ -74,9 +74,9 @@
             this.yahtzeResultLabel = new System.Windows.Forms.Label();
             this.totalScoreResultLabel = new System.Windows.Forms.Label();
             this.player2SmallStraightResult = new System.Windows.Forms.Label();
-            this.player2FullHauseResult = new System.Windows.Forms.Label();
+            this.player2FullHouseResult = new System.Windows.Forms.Label();
             this.player2FourOfKindResult = new System.Windows.Forms.Label();
-            this.player2ThreeOFKindResult = new System.Windows.Forms.Label();
+            this.player2ThreeOfKindResult = new System.Windows.Forms.Label();
             this.player2BonusResult = new System.Windows.Forms.Label();
             this.player2SumResult = new System.Windows.Forms.Label();
             this.player2SixesResult = new System.Windows.Forms.Label();
@@ -89,6 +89,8 @@
             this.player2YahtzeResult = new System.Windows.Forms.Label();
             this.player2ChanceResult = new System.Windows.Forms.Label();
             this.player2LargeStraightResult = new System.Windows.Forms.Label();
+            this.gameWinerLabel = new System.Windows.Forms.Label();
+            this.startNewGameButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dice1PictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dice2PictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dice3PictureBox)).BeginInit();
@@ -611,15 +613,15 @@
             this.player2SmallStraightResult.Size = new System.Drawing.Size(65, 35);
             this.player2SmallStraightResult.TabIndex = 56;
             // 
-            // player2FullHauseResult
+            // player2FullHouseResult
             // 
-            this.player2FullHauseResult.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.player2FullHauseResult.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.player2FullHauseResult.Font = new System.Drawing.Font("Stencil", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.player2FullHauseResult.Location = new System.Drawing.Point(322, 482);
-            this.player2FullHauseResult.Name = "player2FullHauseResult";
-            this.player2FullHauseResult.Size = new System.Drawing.Size(65, 35);
-            this.player2FullHauseResult.TabIndex = 55;
+            this.player2FullHouseResult.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.player2FullHouseResult.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.player2FullHouseResult.Font = new System.Drawing.Font("Stencil", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.player2FullHouseResult.Location = new System.Drawing.Point(322, 482);
+            this.player2FullHouseResult.Name = "player2FullHouseResult";
+            this.player2FullHouseResult.Size = new System.Drawing.Size(65, 35);
+            this.player2FullHouseResult.TabIndex = 55;
             // 
             // player2FourOfKindResult
             // 
@@ -631,15 +633,15 @@
             this.player2FourOfKindResult.Size = new System.Drawing.Size(65, 35);
             this.player2FourOfKindResult.TabIndex = 54;
             // 
-            // player2ThreeOFKindResult
+            // player2ThreeOfKindResult
             // 
-            this.player2ThreeOFKindResult.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.player2ThreeOFKindResult.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.player2ThreeOFKindResult.Font = new System.Drawing.Font("Stencil", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.player2ThreeOFKindResult.Location = new System.Drawing.Point(322, 394);
-            this.player2ThreeOFKindResult.Name = "player2ThreeOFKindResult";
-            this.player2ThreeOFKindResult.Size = new System.Drawing.Size(65, 35);
-            this.player2ThreeOFKindResult.TabIndex = 53;
+            this.player2ThreeOfKindResult.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.player2ThreeOfKindResult.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.player2ThreeOfKindResult.Font = new System.Drawing.Font("Stencil", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.player2ThreeOfKindResult.Location = new System.Drawing.Point(322, 394);
+            this.player2ThreeOfKindResult.Name = "player2ThreeOfKindResult";
+            this.player2ThreeOfKindResult.Size = new System.Drawing.Size(65, 35);
+            this.player2ThreeOfKindResult.TabIndex = 53;
             // 
             // player2BonusResult
             // 
@@ -764,20 +766,43 @@
             this.player2LargeStraightResult.Size = new System.Drawing.Size(65, 35);
             this.player2LargeStraightResult.TabIndex = 57;
             // 
+            // gameWinerLabel
+            // 
+            this.gameWinerLabel.Font = new System.Drawing.Font("Stencil", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.gameWinerLabel.Location = new System.Drawing.Point(488, 295);
+            this.gameWinerLabel.Name = "gameWinerLabel";
+            this.gameWinerLabel.Size = new System.Drawing.Size(288, 156);
+            this.gameWinerLabel.TabIndex = 61;
+            this.gameWinerLabel.Text = "    ";
+            // 
+            // startNewGameButton
+            // 
+            this.startNewGameButton.BackColor = System.Drawing.Color.Gold;
+            this.startNewGameButton.Font = new System.Drawing.Font("Stencil", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.startNewGameButton.Location = new System.Drawing.Point(506, 728);
+            this.startNewGameButton.Name = "startNewGameButton";
+            this.startNewGameButton.Size = new System.Drawing.Size(324, 51);
+            this.startNewGameButton.TabIndex = 62;
+            this.startNewGameButton.Text = "Start new game";
+            this.startNewGameButton.UseVisualStyleBackColor = false;
+            this.startNewGameButton.Click += new System.EventHandler(this.startNewGameButton_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.ForestGreen;
             this.ClientSize = new System.Drawing.Size(845, 825);
+            this.Controls.Add(this.startNewGameButton);
+            this.Controls.Add(this.gameWinerLabel);
             this.Controls.Add(this.player2TotalScoreResult);
             this.Controls.Add(this.player2YahtzeResult);
             this.Controls.Add(this.player2ChanceResult);
             this.Controls.Add(this.player2LargeStraightResult);
             this.Controls.Add(this.player2SmallStraightResult);
-            this.Controls.Add(this.player2FullHauseResult);
+            this.Controls.Add(this.player2FullHouseResult);
             this.Controls.Add(this.player2FourOfKindResult);
-            this.Controls.Add(this.player2ThreeOFKindResult);
+            this.Controls.Add(this.player2ThreeOfKindResult);
             this.Controls.Add(this.player2BonusResult);
             this.Controls.Add(this.player2SumResult);
             this.Controls.Add(this.player2SixesResult);
@@ -891,9 +916,9 @@
         private Label yahtzeResultLabel;
         private Label totalScoreResultLabel;
         private Label player2SmallStraightResult;
-        private Label player2FullHauseResult;
+        private Label player2FullHouseResult;
         private Label player2FourOfKindResult;
-        private Label player2ThreeOFKindResult;
+        private Label player2ThreeOfKindResult;
         private Label player2BonusResult;
         private Label player2SumResult;
         private Label player2SixesResult;
@@ -906,5 +931,7 @@
         private Label player2YahtzeResult;
         private Label player2ChanceResult;
         private Label player2LargeStraightResult;
+        private Label gameWinerLabel;
+        private Button startNewGameButton;
     }
 }
